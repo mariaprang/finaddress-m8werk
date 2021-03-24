@@ -13,9 +13,13 @@ body {
 }
 
 header {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       rgba(194, 189, 189, 0.45),
       rgba(194, 189, 189, 0.45)
+    ), */
+  background-image: linear-gradient(
+      rgba(204, 242, 255, 0.2),
+      rgba(204, 242, 255, 0.2)
     ),
     url("images/17973908.jpg");
   width: 100%;
@@ -47,10 +51,10 @@ nav a {
   font-family: "Poppins", sans-serif;
   margin-right: 10px;
   font-size: 17px;
-  color: #2F7A9D;
+  color: #2f7a9d;
   transition: 0s color;
 }
-nav a:hover{
-    color: #154166;
-    transition-delay:.1s;
+nav a:hover {
+  color: #154166;
+  transition-delay: 0.1s;
 }
