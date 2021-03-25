@@ -6,12 +6,21 @@ body {
   width: 100%;
 }
 
-#canvas,
-#text {
+#canvas {
+  width: 80%;
   position: absolute;
   display: block;
-  top: 0;
-  left: 0;
+  top: 20%;
+  left: 10%;
+  z-index: -1;
+}
+
+#text {
+  width: 100%;
+  position: absolute;
+  display: block;
+  /* top: 20%;
+  left: 10%; */
   z-index: -1;
 }
 
@@ -20,6 +29,20 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+
+.one {
+
+
+
+    background-color: #fefefe;
+    background-image: linear-gradient(150deg, #fefefe 0%, #0092cc 74%);
+
+
+}
+
+
+
 
 .header {
   /* background-attachment: fixed; */
@@ -35,26 +58,26 @@ body {
   /* 
   background-repeat: no-repeat;
   background-size: cover; */
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-
 .logo {
   width: 25rem;
   height: 6.25rem;
-  margin: 5% 5% 5% 10%;
+  margin: 4% 5% 5% 10%;
 }
 nav {
-  margin: 8% 5% 5% 10%;
+  margin: 6% 5% 5% 10%;
 }
 nav a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   margin-right: 0.625rem;
   font-size: 1.063rem;
-  color: #2f7a9d;
+  color: #fff;
   transition: 0s color;
 }
 nav a:hover {
@@ -72,4 +95,32 @@ nav a:hover {
 
 .impressum {
   background-color: blue;
+}
+
+#pp-nav span, .pp-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+#text {
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 8vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#text h1 {
+	opacity: 0.9
 }
