@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="dist/jquery.pagepiling.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <link href="dist/easyScrollDots.css" rel="stylesheet" />
-  <script src="dist/easyScrollDots.js"></script>
-</head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/jquery.pagepiling.js"></script>
+  </head>
 
-<body>
-  <header class="scroll-indicator" id="section01" data-scroll-indicator-title="Home">
-    <img class="logo" src="FinAddress/PNG/FinAddress FB Banner PNG.png" alt="FinAddress" />
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Über uns</a>
-      <a href="#">Impressum</a>
-      <a href="#">AGB</a>
-      <a href="#">Datenschutzerklärung</a>
-      <a href="#">Kontakt</a>
-    </nav>
-  </header>
-  <main>
-    <section class="scroll-indicator" id="section02" data-scroll-indicator-title="Uber uns"></section>
-    <section class="scroll-indicator" id="section03" data-scroll-indicator-title="Impressum"></section>
-    <section class="scroll-indicator" id="section04" data-scroll-indicator-title="AGB"></section>
-    <section class="scroll-indicator" id="section05" data-scroll-indicator-title="Datenschutzerklärung"></section>
-    <section class="scroll-indicator" id="section06" data-scroll-indicator-title="Kontakt"></section>
+  <body id="pagepiling">
+    <div class="section">
+      <div class="header box">
+        <img
+          class="logo"
+          src="FinAddress/PNG/FinAddress FB Banner PNG.png"
+          alt="FinAddress"
+        />
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Über uns</a>
+          <a href="#">Impressum</a>
+          <a href="#">AGB</a>
+          <a href="#">Datenschutzerklärung</a>
+          <a href="#">Kontakt</a>
+        </nav>
+      </div>
+    </div>
+    <div class="section">
+      <div class="about-us box">a</div>
+    </div>
+    <div class="section">
+      <div class="impressum box">i</div>
+    </div>
+    <div class="section">
+      <div class="agb box"></div>
+    </div>
+    <div class="section">
+      <div class="daten-schutz box"></div>
+    </div>
+    <div class="section">
+      <div class="contact box"></div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: null,
+          direction: "vertical",
+          verticalCentered: true,
+          sectionsColor: [],
+          anchors: [],
+          scrollingSpeed: 200,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          navigation: {
+            textColor: "#000",
+            bulletsColor: "#000",
+            position: "right",
+            tooltips: ["section1", "section2", "section3", "section4"],
+          },
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: true,
+          sectionSelector: ".section",
+          animateAnchor: false,
 
-  </main>
-  <footer></footer>
-  <script src="dist/easyScrollDots.js"></script>
-  <script>
-    easyScrollDots({
-      fixedNav: false,
-      fixedNavId: "",
-      fixedNavUpward: false,
-    });
-  </script>
-  <div class="scroll-indicator-controller">
-    <span></span>
-    <div class="" data-indi-controller-id="section01" onclick="scrollIndiClicked('section01');">
-      <span>Home</span>
-      <div></div>
-    </div>
-    <div class="" data-indi-controller-id="section02" onclick="scrollIndiClicked('section02');">
-      <span>Über uns</span>
-      <div></div>
-    </div>
-    <div class="" data-indi-controller-id="section03" onclick="scrollIndiClicked('section03');">
-      <span>Impressum</span>
-      <div></div>
-    </div>
-    <div class="" data-indi-controller-id="section04" onclick="scrollIndiClicked('section04');">
-      <span>AGB</span>
-      <div></div>
-    </div>
-    <div class="" data-indi-controller-id="section05" onclick="scrollIndiClicked('section05');">
-      <span>Datenschutzerklärung</span>
-      <div></div>
-    </div>
-    <div class="" data-indi-controller-id="section06" onclick="scrollIndiClicked('section06');">
-      <span>Kontakt</span>
-      <div></div>
-    </div>
-  </div>
-</body>
-
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+    </script>
+  </body>
 </html>
