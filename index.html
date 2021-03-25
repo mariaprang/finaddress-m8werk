@@ -11,10 +11,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="dist/jquery.pagepiling.js"></script>
   </head>
-
   <body id="pagepiling">
+   
     <div class="section">
+    
       <div class="header box">
+        <canvas id="canvas"></canvas>
         <img
           class="logo"
           src="FinAddress/PNG/FinAddress FB Banner PNG.png"
@@ -62,7 +64,7 @@
             textColor: "#000",
             bulletsColor: "#000",
             position: "right",
-            tooltips: ["section1", "section2", "section3", "section4"],
+            tooltips: ["Home", "Über uns", "Impressum", "AGB", "Datenschutzerklärung", "Kontakt"],
           },
           normalScrollElements: null,
           normalScrollElementTouchThreshold: 5,
@@ -77,6 +79,10 @@
           afterRender: function () {},
         });
       });
+    </script>
+
+    <script src="header-animation.js">
+
     </script>
   </body>
 </html>
