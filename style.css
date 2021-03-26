@@ -59,10 +59,10 @@ body {
 .logo {
   width: 25rem;
   height: 6.25rem;
-  margin: 4% 5% 5% 10%;
+  margin: 4% 5% 5% 7%;
 }
 nav {
-  margin: 6% 5% 5% 10%;
+  margin: 6% 5% 5% 7%;
 }
 nav a {
   text-decoration: none;
@@ -82,11 +82,11 @@ nav a:hover {
   height: 100vh;
 }
 .about-us {
-  background-color: red;
+  /* background-color: red; */
 }
 
 .impressum {
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 #pp-nav span, .pp-slidesNav span {
@@ -128,4 +128,8 @@ nav a:hover {
 
 .arrow{
   margin-top: 10rem;
+}
+
+.monitor-img{
+  
 }
