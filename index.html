@@ -12,9 +12,7 @@
     <script type="text/javascript" src="dist/jquery.pagepiling.js"></script>
   </head>
   <body id="pagepiling">
-   
     <div class="section one">
-    
       <div class="header box">
         <canvas id="canvas"></canvas>
         <img
@@ -35,16 +33,14 @@
           <h1>LOREM IPSUM</h1>
         </div>
         <div id="text" class="arrow">
-          <img src="images/down-arrow.png" alt="">
+          <img src="images/down-arrow.png" alt="" />
         </div>
       </div>
-
-      
     </div>
     <div class="section">
       <div class="about-us box">
         <div class="monitor-img">
-          <img src="images/monitor.png" alt="">
+          <img src="images/monitor.svg" alt="" />
         </div>
       </div>
     </div>
@@ -55,7 +51,6 @@
       <div class="impressum box">i</div>
     </div>
 
-    
     <div class="section">
       <div class="agb box"></div>
     </div>
@@ -74,7 +69,7 @@
           sectionsColor: [],
           anchors: [],
           scrollingSpeed: 200,
-          easing: " ",
+          easing: "swing",
           loopBottom: false,
           loopTop: false,
           css3: true,
@@ -82,7 +77,14 @@
             textColor: "#000",
             bulletsColor: "#000",
             position: "right",
-            tooltips: ["Home", "Über uns", "Impressum", "AGB", "Datenschutzerklärung", "Kontakt"],
+            tooltips: [
+              "Home",
+              "Über uns",
+              "Impressum",
+              "AGB",
+              "Datenschutzerklärung",
+              "Kontakt",
+            ],
           },
           normalScrollElements: null,
           normalScrollElementTouchThreshold: 5,
@@ -99,8 +101,6 @@
       });
     </script>
 
-    <script src="header-animation.js">
-
-    </script>
+    <script src="header-animation.js"></script>
   </body>
 </html>

@@ -131,5 +131,10 @@ nav a:hover {
 }
 
 .monitor-img{
-  
+  height: 100%
+}
+
+.monitor-img img { height: 100%; }
+.pp-section{
+  overflow: hidden;
 }
