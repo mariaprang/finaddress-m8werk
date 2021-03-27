@@ -137,6 +137,15 @@ body {
   margin: 2% auto;
 }
 
+.team-img{
+  position: absolute;
+  bottom: 0;
+}
+
+.image-smaller{
+  max-width: 60%;
+}
+
 #about-us {
   margin-top: 100vh;
   background-color: #fff;
@@ -165,6 +174,7 @@ body {
 
 .headline h2 {
   font-size: 4em;
+  margin: 0 !important;
 }
 
 .info-text {
@@ -173,7 +183,7 @@ body {
   font-weight: 200; */
   font-size: 0.9rem;
   color: #757575;
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
   line-height: 1.85;
   -webkit-hyphens: auto;
