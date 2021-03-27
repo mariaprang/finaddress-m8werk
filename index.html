@@ -6,40 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="dist/jquery.pagepiling.css" />
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="dist/jquery.pagepiling.js"></script>
   </head>
-  <body id="pagepiling">
-    <div class="section one">
+  <body>
+    <nav id="dot-nav"></nav>
+
+    <section class="section one">
       <div class="header box">
         <canvas id="canvas"></canvas>
-        <img
-          class="logo"
-          src="FinAddress/PNG/FinAddress FB Banner PNG.png"
-          alt="FinAddress"
-        />
-        <nav>
-          <a href="#">Home</a>
-          <a href="#about-us">Über uns</a>
-          <a href="#">Team</a>
-          <a href="#">Produkte</a>
-          <a href="#">Impressum</a>
-          <a href="#">AGB</a>
-          <a href="#">Datenschutzerklärung</a>
-          <a href="#">Kontakt</a>
-        </nav>
+        <header>
+          <img
+            class="logo"
+            src="FinAddress/PNG/FinAddress FB Banner PNG.png"
+            alt="FinAddress"
+          />
+          <div class="row nav">
+            <a href="#">Home</a>
+            <a href="#about-us">Über uns</a>
+            <a href="#">Team</a>
+            <a href="#">Produkte</a>
+            <!-- <a href="#">Impressum</a>
+            <a href="#">AGB</a>
+            <a href="#">Datenschutzerklärung</a> -->
+            <a href="#">Kontakt</a>
+          </div>
+        </header>
+
         <div id="text">
           <h1>LOREM IPSUM</h1>
-        </div>
-        <div id="text" class="arrow">
-          <img src="images/down-arrow.png" alt="" />
+          <img class="arrow" src="images/down-arrow.png" alt="" />
         </div>
       </div>
-    </div>
-    <div class="section" id="about-us">
-      <div class="about-us box">
+    </section>
+
+
+    <section class="section" id="about-us">
+      <div class="about-us">
         <div class="headline">
           <h1>
             UNSERE <br />
@@ -81,20 +84,16 @@
           <img src="images/characters.jpg" alt="" />
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- <div class="section">
-      <div class="team box">
-        <div class="headline">
-          <h2>Unser Team</h2>
-        </div>
-      </div>
-    </div> -->
+    <section class="section">
+      <div class="team box"></div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <div class="produkte box"></div>
-    </div>
-    <div class="section">
+    </section>
+    <!-- <div class="section">
       <div class="impressum box"></div>
     </div>
 
@@ -103,49 +102,15 @@
     </div>
     <div class="section">
       <div class="daten-schutz box"></div>
-    </div>
-    <div class="section">
+    </div> -->
+    <section class="section">
       <div class="contact box"></div>
-    </div>
+    </section>
+    <script src="dist/dot-nav-min.js"></script>
     <script>
-      $(document).ready(function () {
-        $("#pagepiling").pagepiling({
-          menu: null,
-          direction: "vertical",
-          verticalCentered: true,
-          sectionsColor: [],
-          anchors: [],
-          scrollingSpeed: 200,
-          easing: "swing",
-          loopBottom: false,
-          loopTop: false,
-          css3: true,
-          navigation: {
-            textColor: "#000",
-            bulletsColor: "#000",
-            position: "right",
-            tooltips: [
-              "Home",
-              "Über uns",
-              "Impressum",
-              "AGB",
-              "Datenschutzerklärung",
-              "Kontakt",
-            ],
-          },
-          normalScrollElements: null,
-          normalScrollElementTouchThreshold: 5,
-          touchSensitivity: 5,
-          keyboardScrolling: true,
-          sectionSelector: ".section",
-          animateAnchor: false,
-
-          //events
-          onLeave: function (index, nextIndex, direction) {},
-          afterLoad: function (anchorLink, index) {},
-          afterRender: function () {},
-        });
-      });
+      (function ($) {
+        // dotNav("section", "easeInOutCubic");
+      })(jQuery);
     </script>
 
     <script src="header-animation.js"></script>
