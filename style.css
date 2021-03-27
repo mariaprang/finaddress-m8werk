@@ -15,6 +15,7 @@ body {
 .column {
   display: flex;
   flex-direction: column;
+  flex-basis: 30%;
 }
 
 .justified {
@@ -88,8 +89,6 @@ body {
   height: 100vh;
 }
 
-
-
 #text {
   width: 100%;
   position: absolute;
@@ -137,12 +136,12 @@ body {
   margin: 2% auto;
 }
 
-.team-img{
+.team-img {
   position: absolute;
   bottom: 0;
 }
 
-.image-smaller{
+.image-smaller {
   max-width: 60%;
 }
 
@@ -183,7 +182,8 @@ body {
   font-weight: 200; */
   font-size: 0.9rem;
   color: #757575;
-  width: 50%;
+  text-align: justify;
+  width: 70%;
   margin: 0 auto;
   line-height: 1.85;
   -webkit-hyphens: auto;
