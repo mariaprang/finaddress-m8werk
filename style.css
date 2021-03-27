@@ -53,10 +53,10 @@ body {
 .logo {
   width: 25rem;
   height: 6.25rem;
-  margin: 4% 5% 5% 7%;
+  margin: 4% 5% 5% 5%;
 }
 nav {
-  margin: 6% 5% 5% 7%;
+  margin: 6% 5% 5% 5%;
 }
 nav a {
   text-decoration: none;
@@ -124,7 +124,7 @@ nav a:hover {
 
 .monitor-img img {
   height: 35%;
-  margin: 5% auto;
+  margin: 2% auto;
 }
 .pp-section {
   overflow: hidden;
@@ -141,12 +141,16 @@ nav a:hover {
   text-align: center;
 }
 
-.headline h1 {
+.headline h1, .headline h2 {
   font-size: 5em;
   font-family: "Montserrat", sans-serif;
   color: #154166;
   margin-top: 0.5rem !important;
   text-transform: uppercase;
+}
+
+.headline h2{
+  font-size: 4em;
 }
 
 .info-text {
