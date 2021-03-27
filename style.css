@@ -280,6 +280,7 @@ nav#dot-nav a:hover::before {
 /* TEAM */
 
 .team {
+  /* padding: 100px; */
   /* border: 1px solid black; */
   /* background-image: linear-gradient(
     to bottom,
@@ -289,15 +290,50 @@ nav#dot-nav a:hover::before {
     #99e2ff,
     #0092cc
   ); */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     #ffffff,
     #eaf5fa,
     #c1e1f0,
     #acd8ec,
-    #5daeda
-  );
+    #5daeda,
+    #acd8ec,
+    #c1e1f0,
+    #eaf5fa,
+    #ffffff
+  ); */
 
+  /* background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #e1ddfc,
+    #c1bbf8,
+    #9e9bf4,
+    #757cf0,
+    #757cf0,
+    #757cf0,
+    #757cf0,
+    #9e9bf4,
+    #c1bbf8,
+    #e1ddfc,
+    #ffffff
+  ); */
+
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #bad3f7,
+    #a3c4f5,
+    #8cb5f2,
+    #75a6f0,
+    #75a6f0,
+    #75a6f0,
+    #75a6f0,
+    #8cb5f2,
+    #a3c4f5,
+    #bad3f7,
+    #ffffff
+  ); 
 }
 
 .team-wrap {
@@ -375,7 +411,7 @@ nav#dot-nav a:hover::before {
     #a3eeff,
     #7ceaea
   ); */
-/* 
+  /* 
   background-image: linear-gradient(
     to top,
     #ffffff,
