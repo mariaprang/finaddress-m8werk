@@ -52,12 +52,6 @@ body {
   background-image: linear-gradient(150deg, #fefefe 0%, #0092cc 74%);
 }
 
-.header {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
-}
-
 .logo {
   width: 25rem;
   height: 6.25rem;
@@ -69,9 +63,6 @@ body {
 .nav a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  /* margin-top: 10%; */
-  /* height: 1.063rem; */
-  /* margin-right: 0.625rem; */
   line-height: 1;
   margin: 0 1rem;
   font-size: 1.125rem;
@@ -81,7 +72,6 @@ body {
 }
 .nav a:hover {
   color: #154166;
-  /* transition-delay: 0.1s; */
 }
 
 .box {
@@ -149,7 +139,6 @@ body {
 .about-us {
   width: 80%;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 .headline {
@@ -173,8 +162,6 @@ body {
 
 .info-text {
   font-family: "Poppins", sans-serif;
-  /* font-size: .7rem;
-  font-weight: 200; */
   font-size: 0.9rem;
   color: #757575;
   text-align: justify;
@@ -236,13 +223,6 @@ nav#dot-nav a {
 nav#dot-nav a.active {
   background: #121212;
 }
-/* nav#dot-nav.red a {
-  border: 1px solid #db2853;
-}
-nav#dot-nav.red a.active,
-nav#dot-nav.red a:first-child {
-  background: #db2853;
-} */
 
 nav#dot-nav a::before {
   position: absolute;
@@ -281,43 +261,6 @@ nav#dot-nav a:hover::before {
 
 .team {
   height: 100vh;
-  /* border: 1px solid black; */
-  /* background-image: linear-gradient(
-    to bottom,
-    #ffffff,
-    #e6f8ff,
-    #ccf1ff,
-    #99e2ff,
-    #0092cc
-  ); */
-  /* background-image: linear-gradient(
-    to bottom,
-    #ffffff,
-    #eaf5fa,
-    #c1e1f0,
-    #acd8ec,
-    #5daeda,
-    #acd8ec,
-    #c1e1f0,
-    #eaf5fa,
-    #ffffff
-  ); */
-
-  /* background-image: linear-gradient(
-    to bottom,
-    #ffffff,
-    #e1ddfc,
-    #c1bbf8,
-    #9e9bf4,
-    #757cf0,
-    #757cf0,
-    #757cf0,
-    #757cf0,
-    #9e9bf4,
-    #c1bbf8,
-    #e1ddfc,
-    #ffffff
-  ); */
 
   background-image: linear-gradient(
     to bottom,
@@ -392,7 +335,8 @@ nav#dot-nav a:hover::before {
 /* TEAM */
 
 /* PRODUKTE */
-.produkte {
+#produkte {
+  height: 150vh;
 }
 .title {
   color: #154166;
@@ -468,6 +412,42 @@ nav#dot-nav a:hover::before {
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 50px;
+}
+
+.active {
+  /* border: 1px solid red; */
+  /* background-image: linear-gradient(150deg, #fefefe 0%, #29a0cf 50%); */
+  background-color: #0092cc;
+}
+
+.active .product-button {
+  background-color: #fff;
+  color: #0092cc;
+}
+
+.active .price,
+.active .contract,
+.active .description {
+  color: #fff;
+}
+
+.active .separator{
+  border-top: 1px solid #fff;
+}
+.thick {
+  font-weight: 300 !important;
+  width: fit-content;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+.payment-img {
+  width: 100%;
+  text-align: center;
+}
+.payment-img img {
+  width: 40%;
+  margin: 0 auto;
 }
 
 /* PRODUKTE */

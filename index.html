@@ -112,14 +112,14 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="produkte">
       <div class="produkte box">
         <div class="headline team-headline">
           <h2>UNSERE Produkte</h2>
         </div>
 
         <div class="products-wrap">
-          <div class="product">
+          <div class="product" onclick="setActive(this);">
             <div class="title">Basic</div>
             <div class="price">10€</div>
             <div class="contract">pro Monat</div>
@@ -134,7 +134,7 @@
             <a class="product-button">Get started</a>
           </div>
 
-          <div class="product">
+          <div class="product" onclick="setActive(this);">
             <div class="title">Professional</div>
             <div class="price">20€</div>
             <div class="contract">pro Monat</div>
@@ -146,7 +146,7 @@
             <a class="product-button">Get started</a>
           </div>
 
-          <div class="product">
+          <div class="product" onclick="setActive(this);">
             <div class="title">Business</div>
             <div class="price">30€</div>
             <div class="contract">pro Monat</div>
@@ -161,6 +161,11 @@
             <a class="product-button">Get started</a>
           </div>
         </div>
+        <div class="accent thick">
+          Die Preise werden monatlich abgerechnet. Kündigung monatlich möglich.
+          Keine Mindestlaufzeit.
+        </div>
+        <div class="payment-img"><img src="images/payment.png"  /></div>
       </div>
     </section>
     <section class="section">
@@ -174,5 +179,6 @@
     </script>
 
     <script src="header-animation.js"></script>
+    <script src="controls.js"></script>
   </body>
 </html>
