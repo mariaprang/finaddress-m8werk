@@ -280,7 +280,7 @@ nav#dot-nav a:hover::before {
 /* TEAM */
 
 .team {
-  /* padding: 100px; */
+  padding: 100px;
   /* border: 1px solid black; */
   /* background-image: linear-gradient(
     to bottom,
@@ -322,6 +322,7 @@ nav#dot-nav a:hover::before {
   background-image: linear-gradient(
     to bottom,
     #ffffff,
+    /* #e8f0fc, */
     #bad3f7,
     #a3c4f5,
     #8cb5f2,
@@ -332,6 +333,7 @@ nav#dot-nav a:hover::before {
     #8cb5f2,
     #a3c4f5,
     #bad3f7,
+    #e8f0fc,
     #ffffff
   ); 
 }
