@@ -280,7 +280,7 @@ nav#dot-nav a:hover::before {
 /* TEAM */
 
 .team {
-  padding: 100px;
+  height: 100vh;
   /* border: 1px solid black; */
   /* background-image: linear-gradient(
     to bottom,
@@ -322,20 +322,14 @@ nav#dot-nav a:hover::before {
   background-image: linear-gradient(
     to bottom,
     #ffffff,
-    /* #e8f0fc, */
+    #ffffff,
     #bad3f7,
     #a3c4f5,
-    #8cb5f2,
-    #75a6f0,
-    #75a6f0,
-    #75a6f0,
-    #75a6f0,
-    #8cb5f2,
     #a3c4f5,
     #bad3f7,
     #e8f0fc,
     #ffffff
-  ); 
+  );
 }
 
 .team-wrap {
@@ -348,6 +342,7 @@ nav#dot-nav a:hover::before {
   width: 20%;
   border-radius: 10px;
   margin-top: 3%;
+  padding: 10px;
   /* border: 1px solid black; */
   text-align: center;
   transition: box-shadow 0.5s;
@@ -372,6 +367,7 @@ nav#dot-nav a:hover::before {
 }
 
 .team-headline {
+  margin-bottom: 20px;
 }
 
 .team-box p {
@@ -395,32 +391,83 @@ nav#dot-nav a:hover::before {
 
 /* TEAM */
 
+/* PRODUKTE */
 .produkte {
-  /* background-image: linear-gradient(
-    to top,
-    #ffffff,
-    #eef6ff,
-    #cdf1ff,
-    #a3eeff,
-    #7ceaea
-  );
-
-  background-image: linear-gradient(
-    to bottom,
-    #ffffff,
-    #eef6ff,
-    #cdf1ff,
-    #a3eeff,
-    #7ceaea
-  ); */
-  /* 
-  background-image: linear-gradient(
-    to top,
-    #ffffff,
-    #eaf5fa,
-    #c1e1f0,
-    #acd8ec,
-    #5daeda
-  );
-  opacity: 90%; */
 }
+.title {
+  color: #154166;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.price {
+  font-family: "Poppins", sans-serif;
+  color: #0092cc;
+  font-weight: 100;
+  font-size: 5rem;
+}
+.products-wrap {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5% auto;
+}
+
+.contract {
+  font-family: "Poppins", sans-serif;
+  color: #0092cc;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.product {
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  /* width: 2% !important; */
+  padding: 30px;
+  width: 25%;
+  /* border: 1px solid #0092cc; */
+  text-align: center;
+  border-radius: 30px;
+  transition: transform 2s ease;
+  height: 30rem;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.description {
+  text-align: justify;
+  color: #757575;
+  /* margin: 20% 0; */
+  /* border-top: 1px solid black; */
+}
+
+.separator {
+  border-top: 1px solid #a3c4f5;
+  margin: 11% 0;
+}
+
+.product-button {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  text-align: center;
+  width: 70%;
+  background-color: #0092cc;
+  padding: 15px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 50px;
+}
+
+/* PRODUKTE */
