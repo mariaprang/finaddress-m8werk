@@ -456,11 +456,21 @@ nav#dot-nav a:hover::before {
 
 #contact {
   height: 120vh;
+  position: relative;
 }
 .contact {
+  position: absolute;
+  bottom: 3%;
+  /* left: 50%; */
   width: 70%;
   height: auto;
-  margin: 5% auto;
+
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
@@ -493,9 +503,9 @@ textarea,
   background-color: transparent;
   outline: none;
   color: #757575;
-  border-bottom: 1px solid #2183dd;
+  border-bottom: 1px solid #6862e6;
   padding: 15px 10px;
-  caret-color: #757575;
+  caret-color: #6862e6;
   font-size: 20px;
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -507,19 +517,36 @@ textarea,
   border-radius: 30px;
   cursor: pointer;
   letter-spacing: 2px;
-  /* background-image: -moz-linear-gradient(
-    180deg,
-    #a12299 0%,
-    #d23a74 51%,
-    #f96834 99%
-  );
-  background-image: -webkit-linear-gradient(
-    180deg,
-    #a12299 0%,
-    #d23a74 51%,
-    #f96834 99%
-  ); */
-  background-image: linear-gradient(200deg, #fefefe 0%, #0092cc 100%);
   color: #fff;
   margin: 0 auto;
+  background-color: #6862e6;
+}
+
+.email-form-btn:hover {
+  background-color: #7a75de;
+}
+
+.illustration {
+  position: absolute;
+  bottom: 500px;
+  left: 60%;
+}
+
+.woman {
+  width: 70%;
+}
+
+.shadow {
+  width: 70%;
+  position: absolute;
+  bottom: -30px;
+  right: 15%;
+}
+
+.mailbox {
+  width: 20%;
+  position: absolute;
+  top: 120px;
+  left: 20%;
+  
 }
