@@ -555,6 +555,7 @@ textarea,
 }
 
 .footer {
+  
   margin-top: 5rem;
   padding: 4rem 3rem;
   width: 100%;
@@ -601,4 +602,61 @@ textarea,
   letter-spacing: 2px;
   font-weight: 100;
   line-height: 2rem;
+}
+.subpage-header {
+  height: 11rem;
+  background-image: linear-gradient(150deg, #fefefe 0%, #0092cc 74%);
+  -webkit-box-shadow: 2px 4px 16px 3px rgba(0,0,0,0.32); 
+  box-shadow: 2px 4px 16px 3px rgba(0,0,0,0.32);
+}
+
+.subpage-nav a {
+  color: #fff;
+}
+
+.agb-header{
+  width: 80%;
+  color: #3c3954;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500 !important;
+}
+
+.subpage-main{
+  padding: 3rem;
+}
+
+.subpage-main p{
+ 
+  font-size: 16px;
+    color: #757575;
+    line-height: 1.85;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    text-align: justify;
+    
+}
+
+.agb-text{
+  width: 70%; margin: 0 auto;
+}
+
+.impressum-header{
+  font-size: 3rem;
+}
+
+.impressum-main{
+  width: 50%;
+  margin: 7% auto;
+}
+
+.impressum-main p{
+  color: #3c3954;
+  font-family: "Poppins", sans-serif;
+}
+.impressum-main h3{
+  font-size: 2rem;
+  color: #3c3954;
+  font-family: "Poppins", sans-serif;
 }
