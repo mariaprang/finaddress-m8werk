@@ -370,7 +370,7 @@ nav#dot-nav a:hover::before {
   position: relative;
   /* width: 2% !important; */
   padding: 30px;
-  width: 25%;
+  width: 20%;
   /* border: 1px solid #0092cc; */
   text-align: center;
   border-radius: 30px;
@@ -431,7 +431,7 @@ nav#dot-nav a:hover::before {
   color: #fff;
 }
 
-.active .separator{
+.active .separator {
   border-top: 1px solid #fff;
 }
 .thick {
@@ -451,3 +451,75 @@ nav#dot-nav a:hover::before {
 }
 
 /* PRODUKTE */
+
+/* CONTACT */
+
+#contact {
+  height: 120vh;
+}
+.contact {
+  width: 70%;
+  height: auto;
+  margin: 5% auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+form {
+  text-align: center;
+}
+form input,
+form textarea {
+  /* margin: 0 auto; */
+}
+
+form button {
+  border: none;
+  width: fit-content;
+}
+.login-form input[type="text"],
+input[type="email"],
+textarea,
+.entry-content input[type="text"],
+.entry-content input[type="number"] {
+  width: 70% !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  background-color: transparent;
+  outline: none;
+  color: #757575;
+  border-bottom: 1px solid #2183dd;
+  padding: 15px 10px;
+  caret-color: #757575;
+  font-size: 20px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.email-form-btn {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  /* background-image: -moz-linear-gradient(
+    180deg,
+    #a12299 0%,
+    #d23a74 51%,
+    #f96834 99%
+  );
+  background-image: -webkit-linear-gradient(
+    180deg,
+    #a12299 0%,
+    #d23a74 51%,
+    #f96834 99%
+  ); */
+  background-image: linear-gradient(200deg, #fefefe 0%, #0092cc 100%);
+  color: #fff;
+  margin: 0 auto;
+}
