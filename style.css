@@ -45,7 +45,7 @@ body {
 
 .one {
   background-color: #fefefe;
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   right: 0;
   z-index: 1;
@@ -131,7 +131,7 @@ body {
 }
 
 #about-us {
-  margin-top: 100vh;
+  /* margin-top: 100vh; */
   background-color: #fff;
   padding: 5rem 0;
 }
@@ -209,6 +209,7 @@ nav#dot-nav {
   right: 30px;
   z-index: 100;
 }
+
 nav#dot-nav a {
   border: 1px solid #121212;
   border-radius: 50%;
@@ -251,6 +252,9 @@ nav#dot-nav a:nth-child(4)::before {
 
 nav#dot-nav a:nth-child(5)::before {
   content: "Kontakt";
+}
+nav#dot-nav a:nth-child(6)::before {
+  content: "Wichtiges";
 }
 
 nav#dot-nav a:hover::before {
@@ -548,5 +552,53 @@ textarea,
   position: absolute;
   top: 120px;
   left: 20%;
-  
+}
+
+.footer {
+  margin-top: 5rem;
+  padding: 4rem 3rem;
+  width: 100%;
+  background-color: #7e8afd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-img {
+  position: absolute;
+  right: 0;
+  width: 20%;
+}
+
+.footer-text {
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.smaller {
+  width: 15rem;
+  height: 4rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  /* margin: 2rem 0.5rem; */
+  flex-basis: 20% !important;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  flex-basis: 20% !important;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 100;
+  line-height: 2rem;
 }

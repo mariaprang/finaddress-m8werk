@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FinAddress</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -35,7 +35,9 @@
 
         <div id="text">
           <h1>LOREM IPSUM</h1>
-          <img class="arrow" src="images/down-arrow.png" alt="" />
+          <a href="#about-us"
+            ><img class="arrow" src="images/down-arrow.png"
+          /></a>
         </div>
       </div>
     </section>
@@ -181,9 +183,12 @@
       </div>
       <div class="contact">
         <div class="illustration">
-          <img class="woman" src="images/illustration-woman-online-desktop.svg" />
-          <img class="shadow" src="images/bg-pattern-desktop.svg" alt="">
-          <img class="mailbox" src="images/illustration-box-desktop.svg">
+          <img
+            class="woman"
+            src="images/illustration-woman-online-desktop.svg"
+          />
+          <img class="shadow" src="images/bg-pattern-desktop.svg" alt="" />
+          <img class="mailbox" src="images/illustration-box-desktop.svg" />
         </div>
         <form class="column login-form">
           <input type="text" placeholder="Ihre Name" />
@@ -203,15 +208,41 @@
     </section>
 
     <section class="section">
-      <div class="footer box"></div>
-    </section>
-    <script src="dist/dot-nav-min.js"></script>
-    <script>
-      (function ($) {
-        // dotNav("section", "easeInOutCubic");
-      })(jQuery);
-    </script>
+      <div class="footer row">
+        <div class="column footer-col">
+          <img
+            class="logo smaller"
+            src="FinAddress/PNG/FinAddress FB Banner PNG.png"
+            alt="FinAddress"
+          />
+          <p class="footer-text">Eine Tochter der</p>
+          <img class="logo smaller" src="images/FinHolding.png" />
+        </div>
 
+        <div class="footer-col">
+          <div class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#about-us">Über uns</a>
+            <a href="#team">Team</a>
+            <a href="#produkte">Produkte</a>
+            <a href="#contact">Kontakt</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-nav">
+            <a href="#">AGB</a>
+            <a href="#team">Impressum</a>
+            <a href="#about-us">Datenschutzerklärung</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <img src="images/team-footer.png" class="footer-img" />
+        </div>
+      </div>
+    </section>
+
+    <script src="dist/dot-nav-min.js"></script>
     <script src="header-animation.js"></script>
     <script src="controls.js"></script>
   </body>
