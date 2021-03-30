@@ -1,0 +1,198 @@
+/*Responsive Styles*/
+
+/* Smartphones (portrait) ---------------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    #produkte{
+        height: 450vh !important;
+    }
+
+    #contact{
+        height: 180vh !important;
+    }
+
+}
+
+/* Smartphones (landscape) ---------------- */
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .openMenu {
+    display: block;
+  }
+
+  #canvas {
+    display: none;
+  }
+
+  .logo {
+    width: 80%;
+    height: 80%;
+  }
+  .about-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline h1,
+  .headline h2 {
+    font-size: 2em;
+  }
+
+  .menu-wrap {
+    display: none;
+  }
+  .team-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-box {
+    width: 100%;
+  }
+
+  .products-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .product {
+    width: 80%;
+    margin: 5% auto;
+  }
+
+  /* #produkte {
+    height: 250vh;
+  } */
+
+  /* #contact {
+    height: 200vh;
+  } */
+
+  .thick {
+    text-align: justify;
+    width: 80%;
+    margin: 10% auto;
+  }
+
+  .footer-col img {
+    /* width: 100%;
+          height: 40%; */
+    display: none;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-img {
+    display: none;
+  }
+  .footer-text {
+    display: none;
+  }
+  .shadow {
+    display: none;
+  }
+  .mailbox {
+    display: none;
+  }
+}
+
+/* Tablets (portrait) -------------------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Add Your CSS Styling Here */
+  .openMenu {
+    display: block;
+  }
+
+  #canvas {
+    display: none;
+  }
+
+  .logo {
+    width: 80%;
+    height: 80%;
+  }
+  .about-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline h1,
+  .headline h2 {
+    font-size: 2em;
+  }
+
+  .menu-wrap {
+    display: none;
+  }
+  .team-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-box {
+    width: 100%;
+  }
+
+  .products-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .product {
+    width: 80%;
+    margin: 2% auto;
+  }
+
+  /* #produkte {
+    
+  }
+
+  #contact {
+    height: 200vh;
+  } */
+
+  .thick {
+    text-align: justify;
+    width: 80%;
+    margin: 10% auto;
+  }
+
+  .footer-col img {
+    /* width: 100%;
+          height: 40%; */
+    display: none;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-img {
+    display: none;
+  }
+  .footer-text {
+    display: none;
+  }
+  .shadow {
+    display: none;
+  }
+  .mailbox {
+    display: none;
+  }
+}
+
+/* Tablets (landscape) ------------------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Add Your CSS Styling Here */
+}
+
+/* Old Desktops and laptops ------------------ */
+@media only screen and (min-width: 1025px) {
+  /* Add Your CSS Styling Here */
+}
+
+/* Desktops ------------------ */
+@media only screen and (min-width: 1201px) {
+  /* Add Your CSS Styling Here */
+}
