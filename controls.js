@@ -7,3 +7,10 @@ function setActive(el) {
     }
     el.classList.add("active");
 }
+
+function showMobileMenu() {
+    var element = document.getElementById("menu-wrap");
+    element.classList.toggle("mobileMenu");
+    document.getElementById("logo").classList.toggle("hide");
+    document.getElementById("header").classList.toggle("mobile-header");
+}

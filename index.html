@@ -15,17 +15,17 @@
     <section class="section one">
       <div class="header box">
         <canvas id="canvas"></canvas>
-        <header>
+        <header id="header">
           <img
-            class="logo"
+            class="logo" id="logo"
             src="FinAddress/PNG/FinAddress FB Banner PNG.png"
             alt="FinAddress"
           />
           <div class="row nav">
-            <div class="openMenu">
-              <img src="images/menu-button.png" />
+            <div class="openMenu" >
+              <img src="images/menu-button.png" onclick="showMobileMenu();"/>
             </div>
-            <div class="menu-wrap">
+            <div class="menu-wrap" id="menu-wrap">
               <a href="#">Home</a>
               <a href="#about-us">Über uns</a>
               <a href="#team">Team</a>

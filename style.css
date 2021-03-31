@@ -667,10 +667,42 @@ textarea,
   display: none;
 }
 
-.openMenu:hover{
- cursor: pointer;
+.openMenu:hover {
+  cursor: pointer;
 }
 
 .openMenu img {
   width: 50%;
+}
+
+.mobileMenu {
+  display: flex  !important;
+  flex-direction: column;
+  width: 100vh !important;
+  height: 23rem;
+  background-color: #1d96ce
+  /* text-align: center; */
+}
+
+.mobileMenu a {
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  /* background-color: red; */
+  width: fit-content !important;
+  margin-left: 35% !important;
+  line-height: 4;
+  /* text-align: center; */
+}
+
+.mobileMenu header {
+  padding: 0 !important;
+}
+
+.hide {
+  display: none;
+}
+
+.mobile-header {
+  padding: 0 !important;
 }
